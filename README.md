@@ -1,1 +1,1 @@
-# kojak_twitch_prediction
+# Project Kojak: Twitch Viewer Prediction
