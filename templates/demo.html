@@ -10,34 +10,55 @@
 
     <title>Twitch Prediction</title>
   </head>
-  <body>  		
-  	<div class="container">
-  		<div class = 'row'>
-  			<h1> Twitch Plays Data Science </h1>
-  		</div>
-	  	<div class='row'>
-			Choose your game!<br>
+  <body> 
+  	<div class="p-3 mb-2 bg-dark text-white">Twitch Plays Data Science</div> 
+  	<div class = 'container-fluid'>
+		Choose your game:
+		<div class="btn-group">
+		  	<button type="button" class="btn btn-dark">Game</button>
+		  	<button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    <span class="sr-only">Toggle Dropdown</span>
+		  	</button>
+		  	<div class="dropdown-menu">
+		    	<a class="dropdown-item" href="/pred">Fortnite</a>
+		    	<a class="dropdown-item" href="/pred">Hearthstone</a>
+		    	<a class="dropdown-item" href="/pred">Dota 2</a>
+		  	</div>
 		</div>
-		<div class='row'>
-			<div class="media">
-			  <img class="mr-3" src="https://raw.githubusercontent.com/dynogravelso/kojak_twitch_prediction/master/demo_plot_small.png" alt="Sample Prediction Image">
-			  <div class="media-body">
-			    <h5 class="mt-0"></h5>
-			    Preview
-			  </div>
-			</div>			
-			<div class="btn-group">
-			  <button type="button" class="btn btn-info">Game</button>
-			  <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    <span class="sr-only">Toggle Dropdown</span>
-			  </button>
-			  <div class="dropdown-menu">
-			    <a class="dropdown-item" href="/pred">Fortnite</a>
-			    <a class="dropdown-item" href="/pred">Hearthstone</a>
-			    <a class="dropdown-item" href="/pred">Dota 2</a>
-			  </div>
+  	</div>	
+  	<br>
+  	<div class="container-fluid">
+		<div class="media">
+			<img class="align-self-start mr-3" src="https://raw.githubusercontent.com/dynogravelso/kojak_twitch_prediction/master/demo_plot_small.png" alt="Sample Prediction Image">
+		  	<span class='border border-primary'>
+		  	<div class="media-body">
+		  		<h5 class="mt-0">24 Hour Prediction</h5>
+		  		<p> Twitch API data is collected in 5 minute intervals and stored in a database. <br> 
+		  		This data is used to predict viewership for the next 24 hours! </p>
+			</div>
+			</span>
+		</div>			
+	</div>
+<!-- 	<div class='container'>
+	  	<div class="row justify-content-md-left">
+	  		<div class='col-sm-2'>
+				Choose your game!
+			</div>
+			<div class='col-sm-1'>
+				<div class="btn-group">
+				  <button type="button" class="btn btn-info">Game</button>
+				  <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    <span class="sr-only">Toggle Dropdown</span>
+				  </button>
+				  <div class="dropdown-menu">
+				    <a class="dropdown-item" href="/pred">Fortnite</a>
+				    <a class="dropdown-item" href="/pred">Hearthstone</a>
+				    <a class="dropdown-item" href="/pred">Dota 2</a>
+				  </div>
+				</div>
 			</div>
 		</div>
+ -->
 	</div>
 
     <!-- Optional JavaScript -->
