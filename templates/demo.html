@@ -1,0 +1,39 @@
+{% extends 'bootstrap/base.html' %}
+{% block content %}
+	<!-- {{super ()}} -->
+	<h1> Twitch Predicts Data Science </h1>
+	Choose your game!<br>
+	<button class="btn btn-info dropdown-toggle dropdown-toggle-split" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Game
+	</button>
+	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		<a class="dropdown-item" href="/pred">Fortnite</a><br>
+		<a class="dropdown-item" href="/pred">Hearthstone</a><br>
+		<a class="dropdown-item" href="/pred">Dota 2</a><br>
+	</div>
+
+	<div class="btn-group">
+	  <button type="button" class="btn btn-danger">Action</button>
+	  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    <span class="sr-only">Toggle Dropdown</span>
+	  </button>
+	  <div class="dropdown-menu">
+	    <a class="dropdown-item" href="#">Fortnite</a>
+	    <a class="dropdown-item" href="#">Hearthstone</a>
+	    <a class="dropdown-item" href="#">Dota 2</a>
+	  </div>
+	</div>
+{% endblock %}
+<!-- <html>
+	<head>
+	</head>
+	<body>
+		
+	{% if prob %}
+	The hurricane is likely to cause huge damage!
+	{% endif %}	
+	{% if prob == 0 %}
+	The hurricane is not likely to cause much damage.
+	{% endif %}	
+	</body>
+</html> -->

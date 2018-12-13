@@ -1,0 +1,17 @@
+{% extends 'bootstrap/base.html' %}
+<html>
+	<head>
+	</head>
+	<body>
+		{% block content %}
+		<h1> 24-Hour Prediction </h1>
+		<img src="demo_plot.png" alt="Prediction">
+		<form action = '/demo' method = 'POST'> 
+			<input class= 'btn btn-info' type = 'submit' value = 'Back'> 
+		</form>
+		{% endblock %}
+	</body>
+</html>
+
+
+
