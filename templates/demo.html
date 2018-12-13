@@ -1,39 +1,42 @@
-{% extends 'bootstrap/base.html' %}
-{% block content %}
-	<!-- {{super ()}} -->
-	<h1> Twitch Predicts Data Science </h1>
-	Choose your game!<br>
-	<button class="btn btn-info dropdown-toggle dropdown-toggle-split" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	Game
-	</button>
-	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-		<a class="dropdown-item" href="/pred">Fortnite</a><br>
-		<a class="dropdown-item" href="/pred">Hearthstone</a><br>
-		<a class="dropdown-item" href="/pred">Dota 2</a><br>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Twitch Prediction</title>
+  </head>
+  <body>  		
+  	<div class="container">
+  		<div class = 'row'>
+  			<h1> Twitch Plays Data Science </h1>
+  		</div>
+	  	<div class='row'>
+			Choose your game!<br>
+		</div>
+		<div class='row'>
+			<div class="btn-group">
+			  <button type="button" class="btn btn-info">Game</button>
+			  <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    <span class="sr-only">Toggle Dropdown</span>
+			  </button>
+			  <div class="dropdown-menu">
+			    <a class="dropdown-item" href="/pred">Fortnite</a>
+			    <a class="dropdown-item" href="/pred">Hearthstone</a>
+			    <a class="dropdown-item" href="/pred">Dota 2</a>
+			  </div>
+			</div>
+		</div>
 	</div>
 
-	<div class="btn-group">
-	  <button type="button" class="btn btn-danger">Action</button>
-	  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	    <span class="sr-only">Toggle Dropdown</span>
-	  </button>
-	  <div class="dropdown-menu">
-	    <a class="dropdown-item" href="#">Fortnite</a>
-	    <a class="dropdown-item" href="#">Hearthstone</a>
-	    <a class="dropdown-item" href="#">Dota 2</a>
-	  </div>
-	</div>
-{% endblock %}
-<!-- <html>
-	<head>
-	</head>
-	<body>
-		
-	{% if prob %}
-	The hurricane is likely to cause huge damage!
-	{% endif %}	
-	{% if prob == 0 %}
-	The hurricane is not likely to cause much damage.
-	{% endif %}	
-	</body>
-</html> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
