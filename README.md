@@ -1,5 +1,5 @@
 # Project Kojak: Twitch Viewer Prediction
 
-![](twitch.jpg)
+![](twitch.png)
 
 #### Background
