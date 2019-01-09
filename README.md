@@ -1,5 +1,5 @@
 # Project Kojak: Twitch Viewer Prediction
 
-![](Fletcher.jpg)
+![](twitch.jpg)
 
 #### Background
