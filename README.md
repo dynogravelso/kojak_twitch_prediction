@@ -17,3 +17,5 @@ In 2017, 355 billion minutes were spent watching live streams of gamers playing 
 * Created a MongoDB database setup on an AWS instance to store 2 million documents of Twitch API data.
 * Developed a time series ensemble model for single game viewership with SARIMA and Facebook Prophet. (MAE ~ 6000 for 30k-50k viewership)
 * Created a flask app demo to make for 24-hour viewership predictions for several games.
+
+[Project Kojak Final Slides](kojak_twitch.pdf)
