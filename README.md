@@ -1,4 +1,4 @@
-# Project Kojak: Twitch Viewer Prediction
+# Project Kojak: Twitch Plays Data Science
 
 ![](twitch.png)
 
